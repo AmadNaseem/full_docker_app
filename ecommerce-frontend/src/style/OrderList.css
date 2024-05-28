@@ -1,0 +1,172 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+
+/* Order List Container */
+.order-list {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Headings */
+.order-list h2, .add-order h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Order Items */
+.order-item {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s;
+}
+
+.order-item:hover {
+  background-color: #f0f0f0;
+}
+
+.order-item h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.order-item p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.order-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.order-item ul li {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Add Order Form */
+.add-order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.add-order form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-order select, .add-order input[type="number"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 22px); /* Ensures proper width including padding and border */
+}
+
+.add-order select:focus, .add-order input[type="number"]:focus {
+  border-color: #ff9800;
+  outline: none;
+}
+
+.add-order button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff9800;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-order button:hover {
+  background-color: #e68a00;
+}
+
+/* Delete Button */
+.order-item button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff4d4d;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-end;
+}
+
+.order-item button:hover {
+  background-color: #e60000;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .order-list, .add-order form {
+      width: 90%;
+      margin: 20px auto;
+  }
+
+  .order-item {
+      padding: 10px;
+  }
+
+  .order-item h3 {
+      font-size: 18px;
+  }
+
+  .order-item p {
+      font-size: 14px;
+  }
+
+  .add-order select, .add-order input[type="number"] {
+      width: calc(100% - 20px);
+  }
+
+  .add-order button {
+      width: 100%;
+  }
+
+  .order-item button {
+      width: 100%;
+  }
+}

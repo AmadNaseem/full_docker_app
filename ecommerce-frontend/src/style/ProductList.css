@@ -1,0 +1,142 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+
+/* Product List Container */
+.product-list {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Headings */
+.product-list h2, .add-product h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Product Items */
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s;
+}
+
+.product-item:hover {
+  background-color: #f0f0f0;
+}
+
+.product-item h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.product-item p {
+  margin: 0;
+  color: #555;
+}
+
+/* Add Product Form */
+.add-product {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.add-product input[type="text"], .add-product input[type="number"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.add-product input[type="text"]:focus, .add-product input[type="number"]:focus {
+  border-color: #ff9800;
+  outline: none;
+}
+
+.add-product button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff9800;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-product button:hover {
+  background-color: #e68a00;
+}
+
+/* Delete Button */
+.product-item button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff4d4d;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-item button:hover {
+  background-color: #e60000;
+}
+
+/* Logout Button */
+.logout {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.logout button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff9800;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout button:hover {
+  background-color: #e68a00;
+}
